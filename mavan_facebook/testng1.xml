@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+  <test thread-count="5" name="Chrome Test">
+    <classes>
+      <class name="pack1.TestNG_Annotations1"/>
+      <class name="pack1.TestNG_Annotation2"/> 
+    </classes>
+  </test> <!-- Test1 --> 
+  
+  <test thread-count="5" name="Firefox Test">
+    <classes>
+      <class name="pack1.TestNG_Annotations1"/>
+      <class name="pack1.TestNG_Annotation2"/> 
+    </classes>
+  </test> <!-- Test1 --> 
+  
+</suite> <!-- Suite1 -->
