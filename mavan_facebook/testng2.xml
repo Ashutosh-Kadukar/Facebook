@@ -5,7 +5,16 @@
   <test   name="Chrome test">
   <parameter name="browser" value="Chrome"/>
     <classes>  
-        <class name="pack1.TestNg_Login_Retesting"/>
+        <class name="pack1.TestNG_verify_rooms_page"/>
+        <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount"/>
+    </classes>
+  </test> <!-- Test2 -->
+  
+  <test   name="Firefox test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>  
+        <class name="pack1.TestNG_verify_rooms_page"/>
+        <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount"/>
     </classes>
   </test> <!-- Test2 -->
   

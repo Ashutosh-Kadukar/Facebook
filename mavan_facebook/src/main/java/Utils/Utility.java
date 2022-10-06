@@ -45,8 +45,7 @@ public class Utility {
 				e.printStackTrace();
 				double output = wb.getSheet(sheet).getRow(a).getCell(b).getNumericCellValue();
                 data = Double.toString(output);
-			}
-			 
+			}	 
 		return data ;
 	}
 

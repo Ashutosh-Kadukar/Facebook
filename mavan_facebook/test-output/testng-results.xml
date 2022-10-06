@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-28T10:44:27 IST" name="Suite2" finished-at="2022-09-28T10:44:50 IST" duration-ms="22734">
+  <suite started-at="2022-10-06T01:34:03 IST" name="Suite2" finished-at="2022-10-06T01:34:38 IST" duration-ms="34899">
     <groups>
     </groups>
-    <test started-at="2022-09-28T10:44:27 IST" name="Chrome test" finished-at="2022-09-28T10:44:50 IST" duration-ms="22734">
-      <class name="pack1.TestNg_Login_Retesting">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:27 IST" name="LaunchBrowser" finished-at="2022-09-28T10:44:29 IST" duration-ms="1723" status="PASS">
+    <test started-at="2022-10-06T01:34:03 IST" name="Chrome test" finished-at="2022-10-06T01:34:19 IST" duration-ms="16238">
+      <class name="pack1.TestNG_verify_rooms_page">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:05 IST" name="LaunchBrowser" finished-at="2022-10-06T01:34:06 IST" duration-ms="935" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,148 +18,434 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:29 IST" name="createPomObjects" finished-at="2022-09-28T10:44:29 IST" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:06 IST" name="createPomObjects" finished-at="2022-10-06T01:34:06 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPomObjects -->
-        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:29 IST" name="Verify_Login_and_CreateNewAccount" finished-at="2022-09-28T10:44:31 IST" duration-ms="2005" status="PASS">
+        <test-method is-config="true" signature="OpenRoomsPage()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:06 IST" name="OpenRoomsPage" finished-at="2022-10-06T01:34:11 IST" duration-ms="5717" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
-        <test-method signature="Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:31 IST" name="Verify_Login_Credentials" finished-at="2022-09-28T10:44:37 IST" duration-ms="5964" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
-at Utils.Utility.getDataFromExcelSheet(Utility.java:41)
-at pack1.TestNg_Login_Retesting.Verify_Login_Credentials(TestNg_Login_Retesting.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- OpenRoomsPage -->
+        <test-method signature="Verify_ReturnToMessenger_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:11 IST" name="Verify_ReturnToMessenger_button" finished-at="2022-10-06T01:34:12 IST" duration-ms="935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_Credentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:37 IST" name="afterMethod" finished-at="2022-09-28T10:44:37 IST" duration-ms="225" status="PASS">
+        </test-method> <!-- Verify_ReturnToMessenger_button -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:12 IST" name="afterMethod" finished-at="2022-10-06T01:34:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Login_Credentials status=FAILURE method=TestNg_Login_Retesting.Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_ReturnToMessenger_button status=SUCCESS method=TestNG_verify_rooms_page.Verify_ReturnToMessenger_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:37 IST" name="Verify_Login_and_CreateNewAccount" finished-at="2022-09-28T10:44:38 IST" duration-ms="736" status="PASS">
+        <test-method is-config="true" signature="OpenRoomsPage()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:12 IST" name="OpenRoomsPage" finished-at="2022-10-06T01:34:15 IST" duration-ms="2479" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
-        <test-method signature="Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:38 IST" name="Verify_Login_Credentials" finished-at="2022-09-28T10:44:43 IST" duration-ms="5168" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
-at Utils.Utility.getDataFromExcelSheet(Utility.java:41)
-at pack1.TestNg_Login_Retesting.Verify_Login_Credentials(TestNg_Login_Retesting.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- OpenRoomsPage -->
+        <test-method signature="Verify_VisitToHelpCenter_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:15 IST" name="Verify_VisitToHelpCenter_button" finished-at="2022-10-06T01:34:19 IST" duration-ms="4324" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_Credentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:43 IST" name="afterMethod" finished-at="2022-09-28T10:44:43 IST" duration-ms="211" status="PASS">
+        </test-method> <!-- Verify_VisitToHelpCenter_button -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:19 IST" name="afterMethod" finished-at="2022-10-06T01:34:19 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Login_Credentials status=FAILURE method=TestNg_Login_Retesting.Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_VisitToHelpCenter_button status=SUCCESS method=TestNG_verify_rooms_page.Verify_VisitToHelpCenter_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:43 IST" name="Verify_Login_and_CreateNewAccount" finished-at="2022-09-28T10:44:44 IST" duration-ms="710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
-        <test-method signature="Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:44 IST" name="Verify_Login_Credentials" finished-at="2022-09-28T10:44:50 IST" duration-ms="5387" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
-at Utils.Utility.getDataFromExcelSheet(Utility.java:41)
-at pack1.TestNg_Login_Retesting.Verify_Login_Credentials(TestNg_Login_Retesting.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Login_Credentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:50 IST" name="afterMethod" finished-at="2022-09-28T10:44:50 IST" duration-ms="202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Login_Credentials status=FAILURE method=TestNg_Login_Retesting.Verify_Login_Credentials()[pri:1, instance:pack1.TestNg_Login_Retesting@2e005c4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="removeObjects()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:50 IST" name="removeObjects" finished-at="2022-09-28T10:44:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="removeObjects()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:19 IST" name="removeObjects" finished-at="2022-10-06T01:34:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeObjects -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:pack1.TestNg_Login_Retesting@2e005c4b]" started-at="2022-09-28T10:44:50 IST" name="afterClass" finished-at="2022-09-28T10:44:50 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:pack1.TestNG_verify_rooms_page@2e005c4b]" started-at="2022-10-06T01:34:19 IST" name="closedBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000259656" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- pack1.TestNG_verify_rooms_page -->
+      <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:03 IST" name="LaunchBrowser" finished-at="2022-10-06T01:34:05 IST" duration-ms="1731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:06 IST" name="createPomObjects" finished-at="2022-10-06T01:34:06 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObjects -->
+        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:06 IST" name="Verify_Login_and_CreateNewAccount" finished-at="2022-10-06T01:34:08 IST" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
+        <test-method signature="Verify_Login_Credentials()[pri:1, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:08 IST" name="Verify_Login_Credentials" finished-at="2022-10-06T01:34:09 IST" duration-ms="1383" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.Verify_Login_Credentials(TestNG_Verift_Login_And_CreateNewAccount.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_Credentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:09 IST" name="afterMethod" finished-at="2022-10-06T01:34:10 IST" duration-ms="206" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Login_Credentials status=FAILURE method=TestNG_Verift_Login_And_CreateNewAccount.Verify_Login_Credentials()[pri:1, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.afterMethod(TestNG_Verift_Login_And_CreateNewAccount.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:10 IST" name="Verify_Login_and_CreateNewAccount" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000250042" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
+        <test-method signature="Verify_CreateNewAccount_Button()[pri:2, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:10 IST" name="Verify_CreateNewAccount_Button" finished-at="2022-10-06T01:34:10 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.09.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.afterMethod(TestNG_Verift_Login_And_CreateNewAccount.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CreateNewAccount_Button -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:10 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000250049" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="removeObjects()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:10 IST" name="removeObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000250053" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeObjects -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@a514af7]" started-at="2022-10-06T01:34:19 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000259654" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- pack1.TestNg_Login_Retesting -->
+      </class> <!-- pack1.TestNG_Verift_Login_And_CreateNewAccount -->
     </test> <!-- Chrome test -->
+    <test started-at="2022-10-06T01:34:19 IST" name="Firefox test" finished-at="2022-10-06T01:34:38 IST" duration-ms="18592">
+      <class name="pack1.TestNG_verify_rooms_page">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:24 IST" name="LaunchBrowser" finished-at="2022-10-06T01:34:28 IST" duration-ms="3838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:28 IST" name="createPomObjects" finished-at="2022-10-06T01:34:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObjects -->
+        <test-method is-config="true" signature="OpenRoomsPage()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:28 IST" name="OpenRoomsPage" finished-at="2022-10-06T01:34:32 IST" duration-ms="4297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenRoomsPage -->
+        <test-method signature="Verify_ReturnToMessenger_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:32 IST" name="Verify_ReturnToMessenger_button" finished-at="2022-10-06T01:34:33 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_ReturnToMessenger_button -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:33 IST" name="afterMethod" finished-at="2022-10-06T01:34:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_ReturnToMessenger_button status=SUCCESS method=TestNG_verify_rooms_page.Verify_ReturnToMessenger_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="OpenRoomsPage()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:33 IST" name="OpenRoomsPage" finished-at="2022-10-06T01:34:34 IST" duration-ms="1763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenRoomsPage -->
+        <test-method signature="Verify_VisitToHelpCenter_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:34 IST" name="Verify_VisitToHelpCenter_button" finished-at="2022-10-06T01:34:38 IST" duration-ms="3408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_VisitToHelpCenter_button -->
+        <test-method is-config="true" signature="removeObjects()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:38 IST" name="removeObjects" finished-at="2022-10-06T01:34:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeObjects -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:38 IST" name="afterMethod" finished-at="2022-10-06T01:34:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_VisitToHelpCenter_button status=SUCCESS method=TestNG_verify_rooms_page.Verify_VisitToHelpCenter_button()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:pack1.TestNG_verify_rooms_page@1a482e36]" started-at="2022-10-06T01:34:38 IST" name="closedBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000278316" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- pack1.TestNG_verify_rooms_page -->
+      <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:19 IST" name="LaunchBrowser" finished-at="2022-10-06T01:34:24 IST" duration-ms="4451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:28 IST" name="createPomObjects" finished-at="2022-10-06T01:34:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObjects -->
+        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:28 IST" name="Verify_Login_and_CreateNewAccount" finished-at="2022-10-06T01:34:30 IST" duration-ms="2321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
+        <test-method signature="Verify_Login_Credentials()[pri:1, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="Verify_Login_Credentials" finished-at="2022-10-06T01:34:30 IST" duration-ms="385" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.Verify_Login_Credentials(TestNG_Verift_Login_And_CreateNewAccount.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_Credentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="afterMethod" finished-at="2022-10-06T01:34:30 IST" duration-ms="91" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Login_Credentials status=FAILURE method=TestNG_Verift_Login_And_CreateNewAccount.Verify_Login_Credentials()[pri:1, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.afterMethod(TestNG_Verift_Login_And_CreateNewAccount.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="Verify_Login_and_CreateNewAccount()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="Verify_Login_and_CreateNewAccount" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000270832" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_and_CreateNewAccount -->
+        <test-method signature="Verify_CreateNewAccount_Button()[pri:2, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="Verify_CreateNewAccount_Button" finished-at="2022-10-06T01:34:30 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\Velocity\TestNG ScreenShots\Test- 2001 06-10-2022 01.34.30.jpg (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Utils.Utility.captureScreenshot(Utility.java:30)
+at pack1.TestNG_Verift_Login_And_CreateNewAccount.afterMethod(TestNG_Verift_Login_And_CreateNewAccount.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CreateNewAccount_Button -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000270838" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="removeObjects()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:30 IST" name="removeObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000270840" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeObjects -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pack1.TestNG_Verift_Login_And_CreateNewAccount@72967906]" started-at="2022-10-06T01:34:38 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665000278313" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- pack1.TestNG_Verift_Login_And_CreateNewAccount -->
+    </test> <!-- Firefox test -->
   </suite> <!-- Suite2 -->
 </testng-results>

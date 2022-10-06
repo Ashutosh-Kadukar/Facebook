@@ -18,6 +18,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import Reusable.Base;
 import Utils.Utility;
 import pages.LogIn_or_SignUp_Page;
 import pages.create_new_account_page;
@@ -37,13 +38,11 @@ public class TestNG_Verift_Login_And_CreateNewAccount {
 	{
 		if(browserName.equals("Chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "D:\\Velocity\\automation\\selenium\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
+			driver = Base.openchrome();
 		}
 		if(browserName.equals("Firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "D:\\\\Velocity\\\\automation\\\\selenium\\\\geckodriver-v0.31.0-win64\\\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver = Base.openFirefox();
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

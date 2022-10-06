@@ -4,17 +4,35 @@
   <test thread-count="2" parallel="classes" name="Chrome test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="pack1.TestNg_Login_Retesting">
+      <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount">
         <methods>
-          <include name="LaunchBrowser"/>
-          <include name="Verify_Login_Credentials"/>
-          <include name="removeObjects"/>
-          <include name="createPomObjects"/>
           <include name="Verify_Login_and_CreateNewAccount"/>
           <include name="afterMethod"/>
+          <include name="createPomObjects"/>
+          <include name="Verify_CreateNewAccount_Button"/>
           <include name="afterClass"/>
+          <include name="removeObjects"/>
+          <include name="Verify_Login_Credentials"/>
+          <include name="LaunchBrowser"/>
         </methods>
-      </class> <!-- pack1.TestNg_Login_Retesting -->
+      </class> <!-- pack1.TestNG_Verift_Login_And_CreateNewAccount -->
     </classes>
   </test> <!-- Chrome test(failed) -->
+  <test thread-count="2" parallel="classes" name="Firefox test(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="pack1.TestNG_Verift_Login_And_CreateNewAccount">
+        <methods>
+          <include name="Verify_Login_and_CreateNewAccount"/>
+          <include name="afterMethod"/>
+          <include name="createPomObjects"/>
+          <include name="Verify_CreateNewAccount_Button"/>
+          <include name="afterClass"/>
+          <include name="removeObjects"/>
+          <include name="Verify_Login_Credentials"/>
+          <include name="LaunchBrowser"/>
+        </methods>
+      </class> <!-- pack1.TestNG_Verift_Login_And_CreateNewAccount -->
+    </classes>
+  </test> <!-- Firefox test(failed) -->
 </suite> <!-- Failed suite [Suite2] -->
